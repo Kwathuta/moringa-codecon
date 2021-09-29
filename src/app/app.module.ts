@@ -12,7 +12,6 @@ import { UsersComponent } from './components/users/users.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
     UsersComponent,
     CategoriesComponent,
     NavbarComponent,
-    FooterComponent,
-    LoginFormComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,

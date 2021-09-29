@@ -1,6 +1,16 @@
 <div class="login-page">
     <div class="container-fluid">
         <h1>Login to Moringa Codecon</h1>
-        <app-login-form></app-login-form>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Email</label>
+                <input type="text" required class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type=" text " required class="form-control " id="password">
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
     </div>
 </div>
