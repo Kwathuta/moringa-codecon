@@ -2,6 +2,7 @@ input {
     border: none;
     border-bottom: solid 1px rgb(56, 52, 52, 0.4);
     width: 90%;
+    background-color: transparent;
 }
 
 button {
@@ -18,4 +19,12 @@ form {
 .row {
     padding: 10px;
     text-align: center;
+}
+
+.container-fluid {
+    background-image: url('../../../assets/img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
