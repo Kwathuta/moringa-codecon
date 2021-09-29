@@ -1,5 +1,21 @@
-.login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+input {
+    border: none;
+    border-bottom: solid 1px rgb(56, 52, 52, 0.4);
+    width: 90%;
+}
+
+button {
+    border: solid 1px #5545CD;
+    color: #5545CD;
+}
+
+form {
+    border: solid 1px #5545CD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.row {
+    padding: 10px;
+    text-align: center;
 }
