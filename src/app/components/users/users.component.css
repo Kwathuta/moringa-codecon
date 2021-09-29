@@ -2,13 +2,24 @@
     margin-right: 50%;
 }
 #title {
-    line-break: auto;
     color: black;
     line-height: 27px;
     font-size: 18px;
+    font-weight: 500;
 }
 .name{
     color: black;
     cursor: pointer;
     font-size: 18px;
+}
+#card1 {
+    margin-top: 20px;
+}
+
+#users {
+    font-size: 18px;
+}
+
+main p {
+    color: rgba(0, 0, 0, 0.5);
 }
