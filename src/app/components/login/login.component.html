@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <form #loginForm='ngForm' class="col-md-9">
+            <div class="mb-5">
+                <h1>Login to Moringa Codecon</h1>
+            </div>
+            <div class="mb-3">
+                <input type="text" required placeholder="email" id="name">
+            </div>
+            <div class="mb-3">
+                <input type="text" required placeholder="password" id="password">
+            </div>
+            <div class="mb-4">
+                <p>Don't have an account yet? <a href="#">signup</a></p>
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        <div class="col-md-1"></div>
+
+    </div>
+</div>
