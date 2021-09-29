@@ -11,9 +11,10 @@ button {
 }
 
 form {
-    border: solid 1px #5545CD;
-    border-radius: 10px;
     padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 0.5px 5px rgb(63, 58, 58);
+    border-radius: 10px;
 }
 
 .row {
@@ -27,4 +28,7 @@ form {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
