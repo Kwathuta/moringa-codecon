@@ -1,3 +1,16 @@
-*{
-    color: crimson;
+#search{
+    background-color: #EFEFEF;
+    color: #000000;  
 }
+#form{
+    padding-left: 150px;
+}
+
+#btn{
+    background-color:#EFEFEF ;
+}
+
+#list li{
+padding: 20px;
+}
+
