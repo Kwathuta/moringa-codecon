@@ -12,6 +12,7 @@ import { UsersComponent } from './components/users/users.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     UsersComponent,
     CategoriesComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
