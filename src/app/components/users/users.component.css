@@ -1,25 +1,30 @@
-#logo {
-    margin-right: 50%;
-}
-#title {
-    color: black;
-    line-height: 27px;
-    font-size: 18px;
-    font-weight: 500;
-}
-.name{
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-}
-#card1 {
-    margin-top: 20px;
+p {
+  margin: 0;
 }
 
-#users {
-    font-size: 18px;
+.users {
+  display: flex;
+  align-items: center;
 }
 
-main p {
-    color: rgba(0, 0, 0, 0.5);
+.user-avatar {
+  width: 55px;
+  height: 50px;
+  border-radius: 20px;
+  background: url(../../../assets/img/user-icon.svg) no-repeat center;
+}
+
+.moringa-tree {
+  text-align: center;
+}
+
+#family-title {
+  margin: 30px 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#user-number {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
 }
