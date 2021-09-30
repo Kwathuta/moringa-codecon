@@ -1,4 +1,6 @@
 .issue-card {
+  margin: 100px 100px;
+  padding: 50px;
   font-family: "Poppins", sans-serif;
   width: 50%;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
@@ -8,6 +10,13 @@
 .issue-title {
   font-weight: 600;
   font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.author-category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .author {
@@ -18,7 +27,8 @@
   width: 55px;
   height: 50px;
   border-radius: 20px;
-  background: url(../../../assets/img/bg.jpg);
+  background: url(../../../assets/img/user-icon.svg) no-repeat;
+  background-position: center;
 }
 
 .author-name-time {
@@ -26,6 +36,84 @@
   font-size: 18px;
 }
 
+.author-name {
+  margin: 0;
+}
+
 .time {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 35px;
+  background: #f1ebff;
+  border: 1px solid rgba(85, 69, 205, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #5545cd;
+}
+
+p {
+  margin: 0;
+}
+
+.issue-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 30px;
+  background: #5545cd;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 425px) {
+  .issue-card {
+    margin: 50px auto;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .issue-title {
+    font-size: 18px;
+  }
+
+  .author-avatar {
+    width: 33px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .author-name-time {
+    font-size: 13px;
+  }
+
+  .purple {
+    width: 70px;
+    height: 20.42px;
+    font-size: 9px;
+  }
+
+  .issue-content {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 10px;
+  }
 }
