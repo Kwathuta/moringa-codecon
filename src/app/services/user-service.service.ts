@@ -11,4 +11,7 @@ export class UserServiceService {
   usermaker(user:any){
     return this.http.post('http://127.0.0.1:5000/auth/v1/signup',user)
   }
+  userfinder(user:any){
+    return this.http.get('http://127.0.0.1:5000/auth/v1/signup',user)
+  }
 }
