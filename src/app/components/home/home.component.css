@@ -1,0 +1,17 @@
+.categories {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.users {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 425px) {
+  .categories {
+    display: none;
+  }
+
+  .users {
+    display: none;
+  }
+}
