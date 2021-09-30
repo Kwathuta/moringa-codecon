@@ -8,13 +8,11 @@
     font-size: 14px;
     color: #000000;
     background: rgba(30, 0, 255, 0.05);
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 .title {
     font-size: 30px;
-}
-#icons{
-    margin-bottom: 20px;
-
 }
 #main{
     margin-left: auto;
