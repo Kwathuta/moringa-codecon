@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { NewIssueComponent } from './new-issue/new-issue.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CommentsComponent } from './components/comments/comments.component';
     NavbarComponent,
     FooterComponent,
     SearchbarComponent,
-    CommentsComponent
+    CommentsComponent,
+    NewIssueComponent
   ],
   imports: [
     BrowserModule,
