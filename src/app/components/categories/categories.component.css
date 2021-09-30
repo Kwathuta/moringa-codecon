@@ -1,0 +1,40 @@
+.name{
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+#card1 {
+    margin-top: 10px;
+}
+
+#categories {
+    width: 18%;
+    font-size: 24px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main p {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    /* position: absolute; */
+    width: 187px;
+    height: 36px;
+    left: 40px;
+    top: 217px;
+}
+
+.row {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* #icons {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+} */
+
+.python{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
