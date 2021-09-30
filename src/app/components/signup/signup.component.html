@@ -23,8 +23,8 @@
                 </div>
             </div>
             <div class="mb-4">
-                <input type="text" required placeholder="confirm_password" id="confirm_password" class="inputs" [(ngModel)]="user.confirmPassword" name="confirmPassword" #confirmPassword='ngModel'>
-                <div [hidden]="confirmPassword.valid || confirmPassword.pristine" class="alert alert-danger small">
+                <input type="text" required placeholder="confirm_password" id="confirm_password" class="inputs" [(ngModel)]="user.confirm_password" name="confirm_password" #confirm_password='ngModel'>
+                <div [hidden]="confirm_password.valid || confirm_password.pristine" class="alert alert-danger small">
                     <p>Confirm password is required</p>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <label class="form-check-label" for="flexRadioDefault1">Agree to terms and conditions</label>
             </div>
             <div class="mb-4">
-                <button type="submit" class="btn">Sign Up</button>
+                <button type="submit" class="btn" (click)="addUser()">Sign Up</button>
             </div>
         </form>
 
