@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <form #newissue='ngForm'>
+        <div class="mb-3">
+            <label class="form-label">Enter a title for your issue</label>
+            <input type="text" id="title" class="form-control">
+        </div>
+        <div class="mb-3">
+            <ul class="list-group">
+                <p>Enter the category in which your query falls</p>
+                <li class="list-group-item"><input class="form-check-input me-1" type="radio" value="python" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>Python</li>
+                <li class="list-group-item"><input class="form-check-input me-2" type="radio" value="javascript" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>JavaScript</li>
+                <li class="list-group-item"><input class="form-check-input me-3" type="radio" value="typescript" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>Typescript</li>
+                <li class="list-group-item"><input class="form-check-input me-4" type="radio" value="html" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>HTML</li>
+                <li class="list-group-item"><input class="form-check-input me-5" type="radio" value="java" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>Java</li>
+                <li class="list-group-item"><input class="form-check-input me-6" type="radio" value="angular" name="language" aria-label="..." [(ngModel)]="issue.language" #language="ngModel" required>Angular</li>
+                <div [hidden]="language.valid || language.pristine">
+                    <p>You must select the language of your querry</p>
+                </div>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter the issue below</label>
+            <input type="textarea" class="form-control" name="content" [(ngModel)]="issue.content" #content='ngModel' required>
+            <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
+                <p>You must fill in a description of you issue</p>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </div>
+    </form>
+</div>
