@@ -48,7 +48,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10px 30px; */
   width: 120px;
   height: 35px;
   background: #f1ebff;
@@ -81,4 +80,40 @@ button {
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 425px) {
+  .issue-card {
+    margin: 50px auto;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .issue-title {
+    font-size: 18px;
+  }
+
+  .author-avatar {
+    width: 33px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .author-name-time {
+    font-size: 13px;
+  }
+
+  .purple {
+    width: 70px;
+    height: 20.42px;
+    font-size: 9px;
+  }
+
+  .issue-content {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 10px;
+  }
 }
