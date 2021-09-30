@@ -5,7 +5,7 @@
                 <h1 style="font-size: 5vmin;">Sign up to Moringa codecon</h1>
             </div>
             <div class="mb-4">
-                <input type="text" required placeholder="username" id="name" class="inputs">
+                <input type="text" required placeholder="username" id="name" class="inputs" [(ngModel)]="user.username" name="username">
             </div>
             <div class="mb-4">
                 <input type="text" required placeholder="email" id="password" class="inputs">

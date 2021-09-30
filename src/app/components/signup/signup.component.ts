@@ -7,7 +7,7 @@ import { User } from 'src/app/user';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  user = User;
+  user = new User(0,"","","");
 
   constructor() { }
 
