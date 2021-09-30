@@ -13,6 +13,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     CategoriesComponent,
     NavbarComponent,
     FooterComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
