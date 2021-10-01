@@ -12,10 +12,29 @@ export class LoginComponent implements OnInit {
 
   user = new User(0,"","","","")
 
+  allUsers:any
+  wrongCredentials:boolean = false;
+  foundUser:boolean = false;
+
   findUser(){
-    console.log(this.user.username)
     this.userService.userfinder()
-    .subscribe(user =>{})
+    .subscribe(userData =>{
+      this.allUsers = userData;
+      for (let index = 0; index < this.allUsers.user.length; index++) {
+        if (this.user.email == this.allUsers.user[index].email && this.user.password == this.allUsers.user[index].password){
+          this.user.id = this.allUsers.user[index].id
+          this.user.username = this.allUsers.user[index].username;
+          this.user.email = this.allUsers.user[index].email;
+          this.user.password = this.allUsers.user[index].password;
+          this.user.confirm_password = this.allUsers.user[index].password;
+          this.foundUser = true;
+        }
+      }
+    })
+  }
+
+  getUser(){
+    return this.user
   }
 
   constructor(private userService : UserServiceService) { }
