@@ -13,7 +13,9 @@ export class LoginComponent implements OnInit {
   user = new User(0,"","","","")
 
   findUser(){
-    this.userService.userfinder(this.user).subscribe()
+    console.log(this.user.username)
+    this.userService.userfinder()
+    .subscribe(user =>{})
   }
 
   constructor(private userService : UserServiceService) { }

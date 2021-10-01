@@ -1,47 +1,25 @@
 <div class="container-fluid">
-  <div class="row">
-    <form #loginForm="ngForm">
-      <div class="mb-5">
-        <h1>Login to Moringa Codecon</h1>
-      </div>
-      <div class="mb-3">
-        <input
-          type="text"
-          required
-          placeholder="email"
-          id="name"
-          [(ngModel)]="user.email"
-          name="email"
-          #email="ngModel"
-        />
-        <div
-          [hidden]="email.valid || email.pristine"
-          class="alert alert-danger"
-        >
-          <p>The email is required</p>
-        </div>
-      </div>
-      <div class="mb-3">
-        <input
-          type="text"
-          required
-          placeholder="password"
-          id="password"
-          [(ngModel)]="user.password"
-          name="password"
-          #password="ngModel"
-        />
-        <div
-          [hidden]="password.valid || password.pristine"
-          class="alert alert-danger"
-        >
-          <p>Password is required</p>
-        </div>
-      </div>
-      <div class="mb-4">
-        <p>Don't have an account yet? <a href="#">signup</a></p>
-        <button type="submit" class="btn" (click)="findUser()">Login</button>
-      </div>
-    </form>
-  </div>
+    <div class="row">
+        <form #loginForm="ngForm">
+            <div class="mb-5">
+                <h1>Login to Moringa Codecon</h1>
+            </div>
+            <div class="mb-3">
+                <input type="text" required placeholder="email" id="name" [(ngModel)]="user.email" name="email" #email="ngModel" />
+                <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+                    <p>The email is required</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" required placeholder="password" id="password" [(ngModel)]="user.password" name="password" #password="ngModel" />
+                <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+                    <p>Password is required</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <p>Don't have an account yet? <a href="#">signup</a></p>
+                <button type="submit" class="btn" (click)="findUser()">Login</button>
+            </div>
+        </form>
+    </div>
 </div>

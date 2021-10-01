@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Issue } from '../issue';
 
+import { UserServiceService } from '../services/user-service.service';
+
 @Component({
   selector: 'app-new-issue',
   templateUrl: './new-issue.component.html',
@@ -11,7 +13,11 @@ export class NewIssueComponent implements OnInit {
 
   issue = new Issue(0,"","","")
 
-  constructor() { }
+  addIssue(){
+    this.userService.issueMaker(this.issue).subscribe()
+  }
+
+  constructor(private userService : UserServiceService) { }
 
   ngOnInit(): void {
   }

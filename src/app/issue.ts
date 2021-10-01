@@ -1,5 +1,5 @@
 export class Issue {
-    constructor(public id:number,public title:string,public language:string,public content:string){
+    constructor(public id:number,public title:string,public category_choice:string,public body:string){
 
     }
 }

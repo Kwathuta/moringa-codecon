@@ -1,90 +1,36 @@
 <div class="container-fluid">
-  <div class="row">
-    <form #signupForm="ngForm">
-      <div class="mb-5">
-        <h1 style="font-size: 5vmin">Sign up to Moringa codecon</h1>
-      </div>
-      <div class="mb-4">
-        <input
-          type="text"
-          placeholder="username"
-          id="name"
-          class="inputs"
-          [(ngModel)]="user.username"
-          name="username"
-          #username="ngModel"
-          required
-        />
-        <div
-          [hidden]="username.valid || username.pristine"
-          class="alert alert-danger small"
-        >
-          <p>Username is required</p>
-        </div>
-      </div>
-      <div class="mb-4">
-        <input
-          type="text"
-          placeholder="email"
-          id="password"
-          class="inputs"
-          [(ngModel)]="user.email"
-          name="email"
-          #email="ngModel"
-          required
-        />
-        <div
-          [hidden]="email.valid || email.pristine"
-          class="alert alert-danger small"
-        >
-          <p>Email is required</p>
-        </div>
-      </div>
-      <div class="mb-4">
-        <input
-          type="text"
-          placeholder="password"
-          id="password"
-          class="inputs"
-          [(ngModel)]="user.password"
-          name="password"
-          #password="ngModel"
-          required
-        />
-        <div
-          [hidden]="password.valid || password.pristine"
-          class="alert alert-danger small"
-        >
-          <p>Password is required</p>
-        </div>
-      </div>
-      <div class="mb-4">
-        <input
-          type="text"
-          required
-          placeholder="confirm_password"
-          id="confirm_password"
-          class="inputs"
-          [(ngModel)]="user.confirm_password"
-          name="confirm_password"
-          #confirm_password="ngModel"
-        />
-        <div
-          [hidden]="confirm_password.valid || confirm_password.pristine"
-          class="alert alert-danger small"
-        >
-          <p>Confirm password is required</p>
-        </div>
-      </div>
-      <div class="mb-5">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault1"
-        />
-        <label class="form-check-label" for="flexRadioDefault1"
-          >Agree to terms and conditions</label
+    <div class="row">
+        <form #signupForm="ngForm">
+            <div class="mb-5">
+                <h1 style="font-size: 5vmin">Sign up to Moringa codecon</h1>
+            </div>
+            <div class="mb-4">
+                <input type="text" placeholder="username" id="name" class="inputs" [(ngModel)]="user.username" name="username" #username="ngModel" required />
+                <div [hidden]="username.valid || username.pristine" class="alert alert-danger small">
+                    <p>Username is required</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="text" placeholder="email" id="password" class="inputs" [(ngModel)]="user.email" name="email" #email="ngModel" required />
+                <div [hidden]="email.valid || email.pristine" class="alert alert-danger small">
+                    <p>Email is required</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="text" placeholder="password" id="password" class="inputs" [(ngModel)]="user.password" name="password" #password="ngModel" required />
+                <div [hidden]="password.valid || password.pristine" class="alert alert-danger small">
+                    <p>Password is required</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <input type="text" required placeholder="confirm_password" id="confirm_password" class="inputs" [(ngModel)]="user.confirm_password" name="confirm_password" #confirm_password="ngModel" />
+                <div [hidden]="confirm_password.valid || confirm_password.pristine" class="alert alert-danger small">
+                    <p>Confirm password is required</p>
+                </div>
+            </div>
+            <div class="mb-5">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label class="form-check-label" for="flexRadioDefault1">Agree to terms and conditions</label
         >
       </div>
       <div class="mb-4">
