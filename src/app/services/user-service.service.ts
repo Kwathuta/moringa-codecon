@@ -9,9 +9,13 @@ export class UserServiceService {
   constructor(private http:HttpClient) { }
 
   usermaker(user:any){
-    return this.http.post('http://127.0.0.1:5000/auth/v1/signup',user)
+    return this.http.post('http://127.0.0.1:5000/auth/user_controls',user)
   }
-  userfinder(user:any){
-    return this.http.get('http://127.0.0.1:5000/auth/v1/signup',user)
+  userfinder(){
+    return this.http.get('http://127.0.0.1:5000/auth/user_controls')
   }
+  issueMaker(issue:any){
+    return this.http.post('http://127.0.0.1:5000/auth/issue',issue)
+  }
+  
 }
